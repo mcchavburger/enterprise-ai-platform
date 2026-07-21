@@ -3,6 +3,12 @@ name = "enterprise-ai-platform"
 version = "0.1.0"
 description = "Enterprise AI Platform"
 requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.16,<1.0",
+]
+
+[project.scripts]
+eap = "eap.cli.app:app"
 
 [tool.ruff]
 line-length = 100
